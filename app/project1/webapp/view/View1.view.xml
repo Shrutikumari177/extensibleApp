@@ -1,0 +1,40 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}" >
+                    <f:SimpleForm id="voyageForm" layout="ResponsiveGridLayout" editable="true">
+                    <Label text="Voyage Code" />
+                    <Input value="{voyage>/voyageCode}" />
+                    <Label text="Voyage Name" />
+                    <Input value="{voyage>/voyageName}" />
+
+                    <Label text="Voyage Type" />
+                    <Input value="{voyage>/voyageType}" />
+
+                    <Label text="Vessel Type" />
+                    <Input value="{voyage>/vesselType}" />
+
+                    <Label text="Currency" />
+                    <Input value="{voyage>/currency}" />
+
+                    <Label text="From Port" />
+                    <Input value="{voyage>/fromPort}" />
+
+                    <Label text="To Port" />
+                    <Input value="{voyage>/toPort}" />
+
+                    <Label text="Distance Between Ports" />
+                    <Input value="{voyage>/distanceBetweenPort}" type="Number" />
+
+                    <Label text="Cargo Size" />
+                    <Input value="{voyage>/cargoSize}" type="Number" />
+
+                    <Toolbar>
+                        <ToolbarSpacer />
+                        <Button text="Save" press="onSave" type="Accept" />
+                    </Toolbar>
+                </f:SimpleForm>
+
+    </Page>
+</mvc:View>
